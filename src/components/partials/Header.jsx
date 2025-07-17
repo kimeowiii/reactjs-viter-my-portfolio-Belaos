@@ -1,49 +1,48 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 const Header = () => {
      const [isOpen, setIsOpen] = React.useState(false);
   return (
     <>
       {/* Header */}
-      <nav className="bg-transparent absolute w-full z-10 ">
+      <nav className="bg-black shadow-lg shadow-slate-700/50 fixed  w-full z-10 ">
         <div className="container mx-auto px-4 py-3">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4 ">
-              <Link
-                to="/"
+              <a
+                href="#"
                 className="text-2xl font-bold text-white drop-shadow-lg"
               >
                 <img src="/img/favicon.ico" alt="" />
-              </Link>
+              </a>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-6">
-              <Link
-                to="/"
+              <a
+                href="#"
                 className="text-white hover:text-blue-400 transition duration-300 font-medium"
               >
                 Home
-              </Link>
-              <Link
-                to="/about"
+              </a>
+              <a
+                href="#about"
                 className="text-white hover:text-blue-400 transition duration-300 font-medium"
               >
                 About
-              </Link>
-              <Link
-                to="/projects"
+              </a>
+              <a
+                href="#projects"
                 className="text-white hover:text-blue-400 transition duration-300 font-medium"
               >
                 Projects
-              </Link>
-              <Link
-                to="/contact"
+              </a>
+              <a
+                href="#contact"
                 className="text-white hover:text-blue-400 transition duration-300 font-medium"
               >
                 Contact
-              </Link>
+              </a>
             </div>
 
             {/* Mobile menu button */}
@@ -81,28 +80,35 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           {isOpen && (
-            <div className="md:hidden mt-4 pb-4 space-y-3 bg-gray-900 bg-opacity-90 rounded-lg p-4">
-              <Link
-                to="/"
-                className="block text-white hover:bg-green-700 px-3 py-2 rounded transition"
+            <div className="md:hidden  pb-4 space-y-3 bg-gray-900 bg-opacity-90 rounded-lg p-4">
+              <a
+                href="#"
+                className="block text-white hover:bg-blue-400 px-3 py-2 rounded transition"
                 onClick={() => setIsOpen(false)}
               >
                 Home
-              </Link>
-              <Link
-                to="/road-biking"
-                className="block text-white hover:bg-green-700 px-3 py-2 rounded transition"
+              </a>
+              <a
+                href="#about"
+                className="block text-white hover:bg-blue-400 px-3 py-2 rounded transition"
                 onClick={() => setIsOpen(false)}
               >
-                Road Biking
-              </Link>
-              <Link
-                to="/mountain-biking"
-                className="block text-white hover:bg-green-700 px-3 py-2 rounded transition"
+                About
+              </a>
+              <a
+                href="#projects"
+                className="block text-white hover:bg-blue-400 px-3 py-2 rounded transition"
                 onClick={() => setIsOpen(false)}
               >
-                Mountain Biking
-              </Link>
+                Projects
+              </a>
+              <a
+                href="#contact"
+                className="block text-white hover:bg-blue-400 px-3 py-2 rounded transition"
+                onClick={() => setIsOpen(false)}
+              >
+               Contact
+              </a>
             </div>
           )}
         </div>

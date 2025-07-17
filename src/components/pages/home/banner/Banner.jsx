@@ -13,7 +13,7 @@ const Banner = () => {
       <section className="bg-black pt-32 border-b border-double border-slate-600">
         <div className="container mx-auto px-4 py-3">
           <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr]">
-            <div>
+            <div className="flex flex-col justify-center items-center lg:items-start ">
               <h1 className="text-white font-bold text-6xl ">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-blue-950 to-gray-200 bg-clip-text text-transparent">
@@ -23,7 +23,7 @@ const Banner = () => {
               <h3 className="text-blue-400 font-bold text-2xl">
                 Computer Science Student
               </h3>
-              <p className="text-white mt-3 mb-8">
+              <p className="text-white mt-5 mb-8">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
                 fugiat quos vero inventore consequatur, illum enim placeat qui
                 pariatur! Quos rem illum similique ducimus rerum ab ut officiis
@@ -37,7 +37,7 @@ const Banner = () => {
                   Get In Touch
                 </button>
               </div>
-              <div className="text-4xl text-white my-5 ">
+              <div className="text-4xl text-white my-10 ">
                 <ul className="flex gap-5 justify-start items-center ">
                   <li className="hover:text-gray-500 transition-all duration-300 ease-in-out">
                     <a href="https://github.com/kimeowiii">
@@ -62,10 +62,11 @@ const Banner = () => {
                 </ul>
               </div>
             </div>
-            <div className="flex justify-center items-center">
-              <img className="lg:-mt-52 w-96" src="/img/about-me.png" alt="" />
+            <div className="lg:flex lg:justify-center lg:items-center lg:-mt-10 hidden">
+              <div className="rounded-3xl rotate-45  size-72 shadow-blue-800/50 shadow-2xl overflow-hidden"> <img className="-rotate-45 -mt-60 -ml-20 size-[39rem] hidden lg:flex" src="/img/about-me.png" alt="" /></div>
             </div>
           </div>
+          
         </div>
       </section>
     </>

@@ -6,10 +6,10 @@ const About = () => {
   return (
     <>
       {/* About */}
-      <section className="bg-black py-20 border-b border-double border-slate-600">
+      <section id="about" className="bg-black py-20 border-b border-double border-slate-600">
         <div className="container mx-auto px-4 py-3">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-20 mb-16">
-            <div className="flex flex-col gap-10">
+            <div className="flex flex-col gap-10 items-center lg:items-start">
               <div>
                 <h2 className="text-6xl font-extrabold text-white">ABOUT ME</h2>
                 <h4 className="text-6xl font-extrabold text-gray-600 opacity-45">
@@ -31,9 +31,9 @@ const About = () => {
 
             <div className=" flex flex-col gap-8">
               <div>
-                <h4 className="mb-5 font-bold text-2xl text-white">
-                  Education
-                </h4>
+                   <h4 className="mb-5  font-bold text-2xl text-white">
+                      Education
+                   </h4>
                 <ol>
                   <li>
                     <CardEducation
@@ -68,19 +68,21 @@ const About = () => {
                 <h4 className="mb-5 font-bold text-2xl text-white">
                   Training Experience
                 </h4>
-                <ol>
+                <ol className="grid grid-cols-1 lg:grid-cols-2 w-full gap-10 justify-between">
                   <li>
                     <CardExperience
                       institution={"UIP Incorporated"}
                       hours={"120 hrs."}
                       course={"Front-End Web Design"}
+                      experience={" Designed a responsive web portfolio using TailwindCSS and collaborated on wireframes and mockups for the login and sign-up pages of the company’s attendance tracker using Figma."}
                     />
                   </li>
-                  <li className="mt-3">
+                  <li className="mt-3 lg:mt-0">
                     <CardExperience
                       institution={"Frontline Business Solutions, Inc."}
                       hours={"240 hrs."}
                       course={"Full-Stack Web Developer"}
+                      experience={"Designed and built responsive and interactive web applications using TailwindCSS, HTML, CSS, JavaScript, React.js, and PHP."}
                     />
                   </li>
                 </ol>
