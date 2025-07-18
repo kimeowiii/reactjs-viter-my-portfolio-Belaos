@@ -63,7 +63,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="lg:flex lg:justify-center lg:items-center lg:-mt-10 hidden">
-              <div className="rounded-3xl rotate-45  size-72 shadow-blue-800/50 shadow-2xl overflow-hidden"> <img className="-rotate-45 -mt-60 -ml-20 size-[39rem] hidden lg:flex" src="/img/about-me.png" alt="" /></div>
+              <div className="rounded-3xl rotate-45  size-72 shadow-blue-800/50 shadow-2xl overflow-hidden"> <img className="-rotate-45 -mt-60 -ml-20 size-[39rem] hidden lg:flex" src="/img/about-me.webp" alt="Kim" /></div>
             </div>
           </div>
           

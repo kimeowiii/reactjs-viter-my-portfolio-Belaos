@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
-     const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
     <>
       {/* Header */}
@@ -13,7 +13,7 @@ const Header = () => {
                 href="#"
                 className="text-2xl font-bold text-white drop-shadow-lg"
               >
-                <img src="/img/favicon.ico" alt="" />
+                <img src="/favicon.ico" alt="" />
               </a>
             </div>
 
@@ -107,16 +107,14 @@ const Header = () => {
                 className="block text-white hover:bg-blue-400 px-3 py-2 rounded transition"
                 onClick={() => setIsOpen(false)}
               >
-               Contact
+                Contact
               </a>
             </div>
           )}
         </div>
       </nav>
-
-
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
