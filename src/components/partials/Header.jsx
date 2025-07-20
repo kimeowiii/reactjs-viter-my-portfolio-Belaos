@@ -32,6 +32,12 @@ const Header = () => {
                 About
               </a>
               <a
+                href="#skills"
+                className="text-white hover:text-blue-400 transition duration-300 font-medium"
+              >
+                Skills
+              </a>
+              <a
                 href="#projects"
                 className="text-white hover:text-blue-400 transition duration-300 font-medium"
               >
@@ -94,6 +100,13 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 About
+              </a>
+              <a
+                href="#skills"
+                className="block text-white hover:bg-blue-400 px-3 py-2 rounded transition"
+                onClick={() => setIsOpen(false)}
+              >
+                Skills
               </a>
               <a
                 href="#projects"

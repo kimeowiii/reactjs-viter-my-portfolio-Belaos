@@ -44,7 +44,9 @@ const Contact = () => {
                   <div className="leading-4">
                     <p className="font-bold">Address</p>
                     <span className="text-gray-500">
-                      <small>Pantao, Libon, Albay</small>
+                      <a href="https://www.google.com/maps/place/Pantao,+Libon,+Albay/@13.1934889,123.3204788,8059m/data=!3m1!1e3!4m6!3m5!1s0x33a171521a01b0ad:0xa2e3d6cc44042568!8m2!3d13.1996108!4d123.3430033!16s%2Fg%2F11f0wlxv7l!5m2!1e4!1e2?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D">
+                        <small>Pantao, Libon, Albay</small>
+                      </a>
                     </span>
                   </div>
                 </li>
@@ -56,7 +58,9 @@ const Contact = () => {
                   <div className="leading-4">
                     <p className="font-bold">Phone</p>
                     <span className="text-gray-500">
-                      <small>(+63)-951-211-9026</small>
+                      <a href="tel:+63-951-211-9026">
+                        <small>(+63)-951-211-9026</small>
+                      </a>
                     </span>
                   </div>
                 </li>
@@ -68,7 +72,9 @@ const Contact = () => {
                   <div className="leading-4">
                     <p className="font-bold">E-mail</p>
                     <span className="text-gray-500">
-                      <small>belaoskimberly@gmail.com</small>
+                      <a href="mailto: belaoskimberly@gmail.com">
+                        <small>belaoskimberly@gmail.com</small>
+                      </a>
                     </span>
                   </div>
                 </li>

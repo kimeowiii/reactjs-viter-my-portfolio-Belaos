@@ -3,6 +3,7 @@ import {
   FaFacebookSquare,
   FaGithub,
   FaInstagram,
+  FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -45,28 +46,36 @@ const Banner = () => {
                     </a>
                   </li>
                   <li className="hover:text-gray-500 transition-all duration-300 ease-in-out">
-                    <a href="belaoskimberly@gmail.com">
+                    <a href="mailto: belaoskimberly@gmail.com">
                       {" "}
                       <MdEmail />{" "}
                     </a>
                   </li>
                   <li className="hover:text-gray-500 transition-all duration-300 ease-in-out">
-                    <FaFacebookSquare />
+                    <a href="https:/www.facebook.com/kim.belaos.54">
+                      <FaFacebookSquare />
+                    </a>
                   </li>
                   <li className="hover:text-gray-500 transition-all duration-300 ease-in-out">
                     <FaInstagram />
                   </li>
                   <li className="hover:text-gray-500 transition-all duration-300 ease-in-out">
-                    <FaYoutube />
+                    <FaLinkedin />
                   </li>
                 </ul>
               </div>
             </div>
             <div className="lg:flex lg:justify-center lg:items-center lg:-mt-10 hidden">
-              <div className="rounded-3xl rotate-45  size-72 shadow-blue-800/50 shadow-2xl overflow-hidden"> <img className="-rotate-45 -mt-60 -ml-20 size-[39rem] hidden lg:flex" src="/img/about-me.webp" alt="Kim" /></div>
+              <div className="rounded-3xl rotate-45  size-72 shadow-blue-800/50 shadow-2xl overflow-hidden">
+                {" "}
+                <img
+                  className="-rotate-45 -mt-60 -ml-20 size-[39rem] hidden lg:flex"
+                  src="/img/about-me.webp"
+                  alt="Kim"
+                />
+              </div>
             </div>
           </div>
-          
         </div>
       </section>
     </>
